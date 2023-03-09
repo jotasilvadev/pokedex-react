@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 
-
 const PokemonDetails = () => {
     const { name } = useParams();
     const [pokemon, setPokemon] = useState(null);
@@ -48,7 +47,7 @@ const PokemonDetails = () => {
                                 ))}
                             </ul>
                         </PokeList>
-                    </ContainerInfo>
+                    </ContainerInfo>                
                 </>
             )}
         </div>
@@ -85,6 +84,7 @@ const PokeList = styled.div`
     padding: 5px;
     border-radius: 5px;
     box-shadow: inset 0px 0px 5px 1px #000;
+    font-family: "Share-TechMono", sans-serif;
 `;
 
 const ContainerInfo = styled.section`
