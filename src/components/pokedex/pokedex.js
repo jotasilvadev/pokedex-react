@@ -17,17 +17,26 @@ export const Pokedex = () => {
         fetch(`https://pokeapi.co/api/v2/pokemon?limit=10`)
             .then((response) => response.json())
             .then((data) => {
-                setPokemons(data.results);
+                const newPokemons = data.results.map((pokemon, index) => ({
+                    ...pokemon,
+                    id: index + 1,
+                }));
+                setPokemons(newPokemons);
                 setTotalPokemons(data.count);
             });
     }, []);
 
+    console.log(Pokedex)
     const loadMorePokemons = () => {
         const nextOffset = loadedPokemons + 10;
         fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${nextOffset}`)
             .then((response) => response.json())
             .then((data) => {
-                setPokemons([...pokemons, ...data.results]);
+                const newPokemons = data.results.map((pokemon, index) => ({
+                    ...pokemon,
+                    id: nextOffset + index + 1,
+                }));
+                setPokemons([...pokemons, ...newPokemons]);
                 setLoadedPokemons(nextOffset);
             });
     };
@@ -46,12 +55,16 @@ export const Pokedex = () => {
                         to={`/pokemon/${pokemon.name}`}
                         style={{ color: "inherit", textDecoration: "inherit" }}
                     >
-                        <PokeName>{pokemon.name}</PokeName>
+                        <PokeName>
+                            #{pokemon.id} {pokemon.name}
+                        </PokeName>
                     </Link>
                 </PokeDiv>
             ))}
             {loadedPokemons < totalPokemons && (
-                <LoadButton onClick={loadMorePokemons}>Mostre mais Pokemons!</LoadButton>
+                <LoadButton onClick={loadMorePokemons}>
+                    Mostre mais Pokemons!
+                </LoadButton>
             )}
         </ContainerDiv>
     );
@@ -72,7 +85,7 @@ const PokeDiv = styled.div`
     align-items: center;
     height: 67px;
     text-transform: uppercase;
-    width: 270px;
+    width: 290px;
     background-color: #bcbcbc;
     box-shadow: inset 0px 0px 5px 2px #000;
     border-radius: 10px;
@@ -92,7 +105,7 @@ const PokeImg = styled.img`
 `;
 
 const PokeName = styled.p`
-    width: 150px;
+    width: 180px;
     font-size: 20px;
     font-family: "Share-TechMono", sans-serif;
     background-color: #c42a2a;
