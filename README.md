@@ -6,8 +6,6 @@ Veja a aplicação rodando aqui:
 
 https://main.d3dwmzmm1q71g2.amplifyapp.com/
 
-(https://i.ibb.co/YNtT5Wn/Screenshot-2.png)
-
 ## Funcionalidades
 
 Página inicial mostra os Pokémons do #1 ao #10.
@@ -60,3 +58,4 @@ Abrir o terminal e usar os comando:
 - npm install
 - npm start
 
+![Screenshot Pokémon Info](https://i.ibb.co/YNtT5Wn/Screenshot-2.png)
