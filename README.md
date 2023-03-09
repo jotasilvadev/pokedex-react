@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# POKÉDEX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pokédex criada utilizando React.JS e consumindo a Api Pokémon.
 
-## Available Scripts
+Veja a aplicação rodando aqui:
 
-In the project directory, you can run:
+https://main.d3dwmzmm1q71g2.amplifyapp.com/
 
-### `npm start`
+(https://i.ibb.co/YNtT5Wn/Screenshot-2.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Página inicial mostra os Pokémons do #1 ao #10.
+Ao clicar no nome do Pokémon abre a página de informações.
+Possui um botão pokédex no topo das informações que retorna.
+A cada clique em carregar mais pokémons, são mostrados +10 pokémons na página.
+Botão start altera o fundo entre padrão e preto.
 
-### `npm test`
+## Ferramentas utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.JS - https://pt-br.reactjs.org/
+- Styled-components - https://styled-components.com/
+- React Router - https://v5.reactrouter.com/
+- APi Pokémon - https://pokeapi.co/
+- AWS Amplify - https://aws.amazon.com/pt/amplify/
 
-### `npm run build`
+## Planejamento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Passo 1 > Listar os 10 primeiros pokemons.
+- Passo 2 > Colocar a img dos pokemons.
+- Passo 3 > Criar o botão que carrega + 10 pokemons.
+- Passo 4 > Criar o component das informações.
+- Passo 5 > Criar a rota para a página de informações.
+- Passo 6 > Organizar as páginas.
+- Passo 7 > Styled components da home.
+- Passo 8 > Styled components do details.
+- Passo 9 > Toggle para alterar background.
+- Passo 10 > Refatoração
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Decições tomadas no processo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Colocar além do nome e img, o ID do Pokémon.
+- Fazer o layout pensando no mobile.
+- Alteração apenas do background do padrão do layout criado para preto, para manter a identidade visual da pokédex.
+- Hosting da AWS Amplify para rodar a aplicação online.
 
-### `npm run eject`
+## Futuras atualizações no projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Campo de busca por nome ou id.
+- Addcionar páginas para mostrar por tipo escolhido.
+- Escolha de 6 pokémons para criar um time e salvar em pdf.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Para rodar o projeto no seu computador
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Baixar o código.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ter node.js instalado.
 
-## Learn More
+Abrir o terminal e usar os comando:
+- npm install
+- npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
