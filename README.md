@@ -35,7 +35,7 @@ Botão start altera o fundo entre padrão e preto.
 - Passo 9 > Toggle para alterar background.
 - Passo 10 > Refatoração
 
-## Decições tomadas no processo
+## Decisões tomadas no processo
 
 - Colocar além do nome e img, o ID do Pokémon.
 - Fazer o layout focado no mobile.
