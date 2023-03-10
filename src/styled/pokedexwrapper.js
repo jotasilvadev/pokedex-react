@@ -5,6 +5,7 @@ const PokedexWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    min-height: 100vh;
     align-items: center;
     background: ${(props) => props.theme.bgwrapper};
 `;

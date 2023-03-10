@@ -83,7 +83,7 @@ const ContainerDiv = styled.div`
 const PokeDiv = styled.div`
     display: flex;
     align-items: center;
-    height: 67px;
+    height: 70px;
     text-transform: uppercase;
     width: 290px;
     background-color: #bcbcbc;
@@ -92,11 +92,15 @@ const PokeDiv = styled.div`
     justify-content: center;
     gap: 25px;
     border: 1px solid #fe1a55;
+
+    @media (max-height: 900px) {
+        height: 60px;
+    }
 `;
 
 const PokeImg = styled.img`
-    width: 53px;
-    height: 53px;
+    width: 55px;
+    height: 55px;
     contain: content;
     background-color: #c2d9ad;
     border-radius: 50%;
