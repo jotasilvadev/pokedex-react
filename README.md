@@ -6,8 +6,6 @@ Veja a aplicação rodando aqui:
 
 https://main.d3dwmzmm1q71g2.amplifyapp.com/
 
-(https://i.ibb.co/YNtT5Wn/Screenshot-2.png)
-
 ## Funcionalidades
 
 Página inicial mostra os Pokémons do #1 ao #10.
@@ -37,11 +35,12 @@ Botão start altera o fundo entre padrão e preto.
 - Passo 9 > Toggle para alterar background.
 - Passo 10 > Refatoração
 
-## Decições tomadas no processo
+## Decisões tomadas no processo
 
 - Colocar além do nome e img, o ID do Pokémon.
-- Fazer o layout pensando no mobile.
-- Alteração apenas do background do padrão do layout criado para preto, para manter a identidade visual da pokédex.
+- Fazer o layout focado no mobile.
+- Manutenção da idenditade visual da pokédex, sem utilizar context-api pra alterar o theme.
+- Botão apenas para alterar o fundo do padrão para preto.
 - Hosting da AWS Amplify para rodar a aplicação online.
 
 ## Futuras atualizações no projeto
@@ -49,6 +48,9 @@ Botão start altera o fundo entre padrão e preto.
 - Campo de busca por nome ou id.
 - Addcionar páginas para mostrar por tipo escolhido.
 - Escolha de 6 pokémons para criar um time e salvar em pdf.
+- Switch para mudar o tema da pokédex entre Red/Blue/Green/.
+- Layout desktop.
+- Detector de tema noturno.
 
 ### Para rodar o projeto no seu computador
 
@@ -60,3 +62,4 @@ Abrir o terminal e usar os comando:
 - npm install
 - npm start
 
+![Screenshot Pokémon Info](https://i.ibb.co/YNtT5Wn/Screenshot-2.png)
