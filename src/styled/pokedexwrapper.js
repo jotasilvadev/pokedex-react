@@ -6,6 +6,7 @@ const PokedexWrapper = styled.div`
     justify-content: center;
     width: 100%;
     align-items: center;
+    background: ${(props) => props.theme.bgwrapper};
 `;
 
 export { PokedexWrapper }

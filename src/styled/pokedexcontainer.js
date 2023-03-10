@@ -13,6 +13,9 @@ const PokedexContainer = styled.div`
     border: 4px solid #fe1a55;
     box-shadow: 0px 0px 10px 3px #000;
     gap: 5px;
+
+    background: ${(props) => props.theme.background};
+    border: ${(props) => props.theme.border};
 `;
 
 export { PokedexContainer }

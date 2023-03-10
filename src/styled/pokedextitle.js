@@ -10,6 +10,8 @@ const PokedexTitle = styled.h1`
     align-items: center;
     color: #ffffff;
     text-shadow: 4px 3px 0 #000000;
+
+    color: ${(props) => props.theme.textColor};
 `;
 
 export { PokedexTitle }

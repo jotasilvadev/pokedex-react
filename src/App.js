@@ -1,4 +1,3 @@
-import './App.css';
 import { AppRouter } from './pages/routes';
 
 function App() {
