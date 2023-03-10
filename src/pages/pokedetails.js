@@ -7,7 +7,7 @@ import { PokedexContainer } from "../styled/pokedexcontainer";
 export const PokemonDetailsPage = () => {
 
     return (
-        <PokedexWrapper>
+        <PokedexWrapper style={{minHeight:"100vh"}}>
             <PokedexContainer>
                 <Link to="/">
                     <PokedexIcon

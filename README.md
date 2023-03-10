@@ -32,15 +32,13 @@ Botão start altera o fundo entre padrão e preto.
 - Passo 6 > Organizar as páginas.
 - Passo 7 > Styled components da home.
 - Passo 8 > Styled components do details.
-- Passo 9 > Toggle para alterar background.
+- Passo 9 > Toggle para alterar o tema.
 - Passo 10 > Refatoração
 
 ## Decisões tomadas no processo
 
 - Colocar além do nome e img, o ID do Pokémon.
 - Fazer o layout focado no mobile.
-- Manutenção da idenditade visual da pokédex, sem utilizar context-api pra alterar o theme.
-- Botão apenas para alterar o fundo do padrão para preto.
 - Hosting da AWS Amplify para rodar a aplicação online.
 
 ## Futuras atualizações no projeto
@@ -50,7 +48,6 @@ Botão start altera o fundo entre padrão e preto.
 - Escolha de 6 pokémons para criar um time e salvar em pdf.
 - Switch para mudar o tema da pokédex entre Red/Blue/Green/.
 - Layout desktop.
-- Detector de tema noturno.
 
 ### Para rodar o projeto no seu computador
 

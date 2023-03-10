@@ -111,7 +111,7 @@ const PokemonSprite = styled.img`
     align-self: center;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #000;
-
+    filter: ${(props) => props.theme.brilho};
 `;
 
 const PokeNameTitle = styled.h1`

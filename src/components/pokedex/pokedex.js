@@ -100,8 +100,14 @@ const PokeImg = styled.img`
     contain: content;
     background-color: #c2d9ad;
     border-radius: 50%;
-    box-shadow: inset 0px 0px 15px 0px #000;
-    padding: 3px;
+    box-shadow: inset 0px 0px 7px 1px #000;
+    transition: all 0.5s ease-in-out;
+    filter: ${(props) => props.theme.brilho};
+
+    &:hover {
+        transform: scale(1.1);
+        filter: brightness(1.3);
+    }
 `;
 
 const PokeName = styled.p`
